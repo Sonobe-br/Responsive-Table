@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TABELAS RESPONSIVAS</title>
+        <!-- <link rel="stylesheet" ref="./styleResponsivo.css"> -->
+    </head>
+
+    <style>
+
+        *{ margin: 0; padding: 0; box-sizing: border-box; }
+
+        
+        .content {
+            
+            display: flex;
+            margin: auto;
+            font-family:sans-serif;
+            
+        }
+
+        .rTable {
+
+            width: 100%;
+            text-align: center;
+            
+        }
+
+        .rTable thead {
+
+            background: black;
+            font-weight: bold;
+            color: #fff; 
+        
+        }   
+        
+        .rTable tbody tr:nth-child(2n) {
+
+            background: #ccc;
+        
+        }
+
+        .rTable th, .rTable td { padding: 5px 0; }  
+
+        @media screen and (max-width: 480px) {
+            .content { width: 94% }
+
+            .rTable thead { display: none; }
+            .rTable tbody td { display: flex; flex-direction: column; }
+
+        }
+
+        @media screen and (min-width: 1200px) {
+            .content { width: 100% }
+
+            .rTable th, .rTable td { padding: 5px 0; }
+            .rTable tbody tr td:nth-child (1) {width: 30% }
+            .rTable tbody tr td:nth-child (2) {width: 40% }
+            .rTable tbody tr td:nth-child (3) {width: 30% }
+            
+
+        } 
+
+    </style>
+    
+    <body> 
+        <div class="content">
+            
+            <table class="rTable" border="1">
+
+                <thead> <!-- Columns -->                    
+                    <tr>
+                     <th>Código</th>
+                     <th>Descrição</th>
+                     <th>Valor</th>
+                    </tr>    
+                </thead>
+               
+                <tbody> <!-- Lines -->
+                   <tr><td>3040</td>	<td>Pote Massas - 2L</td> 	                                    <td> R$ 8,88 </td></tr>
+                   <tr><td>3041</td>	<td>Pote Grãos - 2L</td>	                                    <td> R$ 8,88 </td></tr>
+                   <tr><td>3042</td>	<td>Pote Utensilios  2L</td>	                                <td> R$ 8,88 </td></tr>
+                   <tr><td>9806</td>	<td>Pote Mantimento Classic 1.5L Cereal</td>	                <td> R$ 8,18 </td></tr>
+                   <tr><td>9805</td>	<td>Pote Mantimento Classic 1.5L Açucar</td>	                <td> R$ 8,18 </td></tr>
+                   <tr><td>9804</td>	<td>Pote Mantimento Classic 1.5L Café</td>	                    <td> R$ 8,18 </td></tr>
+                   <tr><td>9803</td>	<td>Pote Mantimento Classic 1.5L Biscoito</td>	                <td> R$ 8,18 </td></tr>
+                   <tr><td>8898</td>	<td>Pote Mantimentos Vanilla 1.5L Cookies</td>	                <td> R$ 8,18 </td></tr>
+                   <tr><td>8998</td>	<td>Pote Mantimentos Vanilla 1.5L Coffee</td>	                <td> R$ 8,18 </td></tr>
+                   <tr><td>9098</td>	<td>Pote Mantimentos Vanilla 1.5L Sugar</td>	                <td> R$ 8,18 </td></tr>
+                   <tr><td>8801</td>	<td>Pote Mantimentos Vanilla 1.0L Tea</td>	                    <td> R$ 5,98 </td></tr>
+                   <tr><td>9298</td>	<td>Pote Mantimentos Mokaccino 1.5L Biscoito</td>	            <td> R$ 8,18 </td></tr>
+                   <tr><td>9398</td>	<td>Pote Mantimentos Mokaccino 1.5L Café</td>	                <td> R$ 8,18 </td></tr>
+                   <tr><td>9498</td>	<td>Pote Mantimentos Mokaccino 1,5L Açucar</td>	                <td> R$ 8,18 </td></tr>
+                   <tr><td>8901</td>	<td>Pote Mantimentos Mokaccino 1.0L Chá</td>	                <td> R$ 5,98 </td></tr>
+                   <tr><td>3007</td>	<td>Pote Mantimento Branco Geada 2.0L Açúcar</td>	            <td> R$ 8,88 </td></tr>
+                   <tr><td>3008</td>	<td>Pote Mantimento Branco Geada 2.0L Café</td>	                <td> R$ 8,88 </td></tr>
+                   <tr><td>3009</td>	<td>Pote Mantimento Branco Geada 2.0L Biscoito</td>     	    <td> R$ 8,88 </td></tr>
+                   <tr><td>4730</td>	<td>Pote Mantimento Crystal 2.0L Açucar</td>	                <td> R$ 8,88 </td></tr>
+                   <tr><td>4830</td>	<td>Pote Mantimento Crystal 2.0L Café</td>              	    <td> R$ 8,88 </td></tr>
+                   <tr><td>4930</td>	<td>Pote Mantimento Crystal 2.0L Biscoito</td>          	    <td> R$ 8,88 </td></tr>
+                   <tr><td>3598</td>	<td>Pote Spresso Café 1.5L</td>	                                <td> R$ 6,54 </td></tr>
+                   <tr><td>3698</td>	<td>Pote Spresso Açucar 1.5L</td>	                            <td> R$ 6,54 </td></tr>
+                   <tr><td>6623</td>	<td>Pote Galinha Feijão  2.7L</td>	                            <td> R$ 6,13 </td></tr>
+                   <tr><td>6629</td>	<td>Pote Galinha Arroz 2.7L</td>	                            <td> R$ 6,13 </td></tr>
+                   <tr><td>6625</td>	<td>Pote Galinha Açucar 1.7L</td>	                            <td> R$ 5,07 </td></tr>
+                   <tr><td>6626</td>	<td>Pote Galinha Farinha  1.7L</td>	                            <td> R$ 5,07 </td></tr>
+                   <tr><td>6628</td>	<td>Pote Galinha Café  1.7L</td>	                            <td> R$ 5,07 </td></tr>
+                   <tr><td>3702</td>	<td>Pote Galinha 1.7L</td>	                                    <td> R$ 5,08 </td></tr>
+                   <tr><td>6627</td>	<td>Pote Galinha Sal 1.0L</td>	                                <td> R$ 3,83 </td></tr>
+                   <tr><td>4434</td>	<td>Pote Geométrico Feijão 1.450ML</td>	                        <td> R$ 4,38 </td></tr>
+                   <tr><td>4934</td>	<td>Pote Geométrico Arroz 1.450ML</td>	                        <td> R$ 4,38 </td></tr>
+                   <tr><td>4534</td>	<td>Pote Geométrico Açucar 1.450ML</td>	                        <td> R$ 4,38 </td></tr>
+                   <tr><td>4634</td>	<td>Pote Geométrico Cereais 1.450ML</td>	                    <td> R$ 4,38 </td></tr>
+                   <tr><td>4834</td>	<td>Pote Geométrico Café 1.450ML</td>	                        <td> R$ 4,38 </td></tr>
+                   <tr><td>4734</td>	<td>Pote Geométrico Sal 1.450ML</td>	                        <td> R$ 4,38 </td></tr>
+                   <tr><td>9702</td>	<td>Pote Lisboa Feijão1.7L</td>	                                <td> R$ 5,07 </td></tr>
+                   <tr><td>9102</td>	<td>Pote Lisboa Arroz  1.7L</td>	                            <td> R$ 5,07 </td></tr>
+                   <tr><td>9002</td>	<td>Pote Lisboa Açucar  1.7L</td>	                            <td> R$ 5,07 </td></tr>
+                   <tr><td>9602</td>	<td>Pote Lisboa Cereais 1.7L</td>	                            <td> R$ 5,07 </td></tr>
+                   <tr><td>9202</td>	<td>Pote Lisboa Café 1.7L</td>	                                <td> R$ 5,07 </td></tr>
+                   <tr><td>9802</td>	<td>Pote Lisboa Sal 1.7L</td>	                                <td> R$ 5,07 </td></tr>
+                   <tr><td>4230</td>	<td>Pote Colonial Dec.Porcelana Inglesa 2.0L</td>	            <td> R$ 8,88 </td></tr>
+                   <tr><td>4298</td>	<td>Pote Colonial Dec.Porcelana Inglesa 1,5L</td>	            <td> R$ 8,18 </td></tr>
+                   <tr><td>4201</td>	<td>Pote Colonial Dec.Porcelana Inglesa 1.0L</td>	            <td> R$ 5,98 </td></tr>
+                   <tr><td>4330</td>	<td>Pote Colonial Dec.Porcelana Chinesa 2.0L</td>	            <td> R$ 8,88 </td></tr>
+                   <tr><td>4398</td>	<td>Pote Colonial Dec.Porcelana Chinesa 1.5L</td>	            <td> R$ 8,18 </td></tr>
+                   <tr><td>4301</td>	<td>Pote Colonial Dec.Porcelana Chinesa 1.0L</td>	            <td> R$ 5,98 </td></tr>
+                   <tr><td>9826</td>	<td>Pote Donuts 1.5L</td>	                                    <td> R$ 6,54 </td></tr>
+                   <tr><td>9827</td>	<td>Pote Doces & Chocolates 1.5L</td>	                        <td> R$ 6,54 </td></tr>
+                   <tr><td>5401</td>	<td>Pote Coração Rosa  1.0L</td>	                            <td> R$ 5,13 </td></tr>
+                   <tr><td>5501</td>	<td>Pote Coração Azul 1.0L</td>	                                <td> R$ 5,13 </td></tr>
+                   <tr><td>5601</td>	<td>Pote Coração Verde 1.0L</td>	                            <td> R$ 5,13 </td></tr>
+                   <tr><td>3602</td>	<td>Pote Caveira Mexicana 1.7L</td>	                            <td> R$ 5,07 </td></tr>
+                   <tr><td>3666</td>	<td>Pote Caveira Mexicana 1.0L</td>	                            <td> R$ 3,83 </td></tr>
+                   <tr><td>2213</td>	<td>Petit Pote Canelado Transp. 1.0L</td>	                    <td> R$ 2,90 </td></tr>
+                   <tr><td>6600</td>	<td>Petit Pote 66 Transp. 1.0L</td>	                            <td> R$ 2,90 </td></tr>
+                   <tr><td>2201</td>	<td>Petit Pote Quadrado Transp.  1.0L</td>	                    <td> R$ 2,90 </td></tr>
+                   <tr><td>2204</td>	<td>Baleiro Transp. 1.0L</td>	                                <td> R$ 3,25 </td></tr>
+                   <tr><td>2207</td>	<td>Petit Pote Diamante Transp. 1.0L</td>	                    <td> R$ 2,90 </td></tr>
+                   <tr><td>3421</td>	<td>Pote Persa Decoração Preto Dark 1.450ML</td>	            <td> R$ 4,38 </td></tr>
+                   <tr><td>3420</td>	<td>Pote Persa Decoração Rosa Suave 1.450ML</td>	            <td> R$ 4,38 </td></tr>
+                   <tr><td>3422</td>	<td>Pote Persa Decoração Verde Agua 1.450ML</td>	            <td> R$ 4,38 </td></tr>
+                   <tr><td>9404</td>	<td>Pote Amor em Potes 3.6L</td>	                            <td> R$ 7,53 </td></tr>
+                   <tr><td>9402</td>	<td>Pote Amor em Potes 1.7L</td>	                            <td> R$ 5,68 </td></tr>
+                   <tr><td>2501</td>	<td>Pote Mantimentos Branco Carrara Safe Ware 1.0L</td>	        <td> R$ 5,99 </td></tr>
+                   <tr><td>2530</td>	<td>Pote Mantimentos Branco Carrara Safe Ware 2.0L</td>	        <td> R$ 8,88 </td></tr>
+                   <tr><td>2598</td>	<td>Pote Mantimentos Branco Carrara Safe Ware 1.5L</td>	        <td> R$ 8,18 </td></tr>
+                   <tr><td>2801</td>	<td>Pote Mantimentos Bege Travertino Safe Ware 1.0L</td>	    <td> R$ 5,99 </td></tr>
+                   <tr><td>2830</td>	<td>Pote Mantimentos Bege Travertino Safe Ware 2.0L</td>	    <td> R$ 8,88 </td></tr>
+                   <tr><td>2898</td>	<td>Pote Mantimentos Bege Travertino Safe Ware 1.5L</td>	    <td> R$ 8,18 </td></tr>
+                   <tr><td>2705</td>	<td>Pote Wave / Tampa Branco Carrara Safe Ware 1.5L</td>	    <td> R$ 8,18 </td></tr>
+                   <tr><td>2605</td>	<td>Pote Wave / Tampa Branco Carrara Safe Ware 1.0L</td>	    <td> R$ 5,99 </td></tr>
+                   <tr><td>2706</td>	<td>Pote Wave / Tampa Bege Travertino Safe Ware 1.5L</td>	    <td> R$ 8,18 </td></tr>
+                   <tr><td>2606</td>	<td>Pote Wave / Tampa Bege Travertino Safe Ware 1.0L</td>	    <td> R$ 5,99 </td></tr>
+                   <tr><td>8970</td>	<td>Pote Azulejo Português 2.7L</td>	                        <td> R$ 6,13 </td></tr>
+                   <tr><td>8902</td>	<td>Pote Azulejo Português 1.7L</td>	                        <td> R$ 5,07 </td></tr>
+                   <tr><td>8966</td>	<td>Pote Azulejo Português 1.0L</td>	                        <td> R$ 3,83 </td></tr>
+                   <tr><td>4498</td>	<td>Pote Azulejo Hidrálico 1.5L</td>	                        <td> R$ 6,54 </td></tr>
+                   <tr><td>4430</td>	<td>Pote Azulejo Hidrálico 2.0L</td>	                        <td> R$ 8,88 </td></tr>
+                   <tr><td>4401</td>	<td>Pote Azulejo Hidrálico 1.0L</td>	                        <td> R$ 5,13 </td></tr>
+                   <tr><td>6004</td>	<td>Pote Margarida Pink 3.6L</td>	                            <td> R$ 7,13 </td></tr>
+                   <tr><td>6070</td>	<td>Pote Margarida Pink 2.7L</td>	                            <td> R$ 6,13 </td></tr>
+                   <tr><td>6002</td>	<td>Pote Margarida Pink 1.7L</td>	                            <td> R$ 5,07 </td></tr>
+                   <tr><td>6044</td>	<td>Pote Torneira Margarida c/Base 3.6L </td>	                <td> R$ 13,78 </td></tr>
+                   <tr><td>1224</td>	<td>Pote Torneira Margarida s/base  3.6L</td>	                <td> R$ 9,21 </td></tr>
+                   <tr><td>6066</td>	<td>Pote Margarida PINK 1.0L</td>	                            <td> R$ 3,83 </td></tr>
+                   <tr><td>9844</td>	<td>Pote Exclusive Prata 1.5L</td>	                            <td> R$ 14,84 </td></tr>
+                   <tr><td>9845</td>	<td>Pote Exclusive Chumbo 1.5L</td>	                            <td> R$ 14,84 </td></tr>
+                   <tr><td>9846</td>	<td>Pote Exclusive Vermelho 1.5L</td>	                        <td> R$ 14,84 </td></tr>
+                   <tr><td>3049</td>	<td>Pote Window Cereja 2.0L</td>	                            <td> R$ 13,78 </td></tr>
+                   <tr><td>9843</td>	<td>Pote Window Cereja 1.5L</td>	                            <td> R$ 12,68 </td></tr>
+                   <tr><td>3048</td>	<td>Pote Window Branco  2.0L</td>	                            <td> R$ 13,78 </td></tr>
+                   <tr><td>9842</td>	<td>Pote Window Branco  1.5L</td>	                            <td> R$ 12,68 </td></tr>
+                   <tr><td>5130</td>	<td>Pote Window Chumbo 2.0L</td>	                            <td> R$ 13,77 </td></tr>
+                   <tr><td>5198</td>	<td>Pote Window Chumbo 1.5L</td>	                            <td> R$ 12,68 </td></tr>
+                   <tr><td>5330</td>	<td>Pote Window Rosê  2.0L</td>	                                <td> R$ 13,77 </td></tr>
+                   <tr><td>5398</td>	<td>Pote Window Rosê 1.5L</td>	                                <td> R$ 12,68 </td></tr>
+                   <tr><td>5230</td>	<td>Pote Window Dourado 2.0L</td>	                            <td> R$ 13,77 </td></tr>
+                   <tr><td>5298</td>	<td>Pote Window Dourado 1.5L</td>	                            <td> R$ 12,68 </td></tr>
+                   <tr><td>1490</td>	<td>Pote Torneira Wave Chumbo - base Metalizada 3.6L</td>	    <td> R$ 26,65 </td></tr>
+                   <tr><td>1491</td>	<td>Pote Torneira Wave Rose - base Metalizada 3.6L</td>	        <td> R$ 26,65 </td></tr>
+                   <tr><td>2000</td>	<td>Baleiro Tpa Prata 2.4L</td>	                                <td> R$ 7,02 </td></tr>
+                   <tr><td>2010</td>	<td>Baleiro Tpa Prata 1.0L</td>	                                <td> R$ 5,30 </td></tr>
+                   <tr><td>3100</td>	<td>Pote 2131 Tpa Prata 1.2L</td>	                            <td> R$ 6,30 </td></tr>
+                   <tr><td>3300</td>	<td>Pote 2133 Tpa Prata 3.0L</td>	                            <td> R$ 8,62 </td></tr>
+                   <tr><td>3200</td>	<td>Pote 2132 Tpa Prata 2.1L</td>	                            <td> R$ 7,23 </td></tr>
+                   <tr><td>2003</td>	<td>Baleiro Tpa Rosê 2.4L</td>	                                <td> R$ 7,02 </td></tr>
+                   <tr><td>2011</td>	<td>Baleiro Tpa Rosê  1.0L</td>	                                <td> R$ 5,30 </td></tr>
+                   <tr><td>3103</td>	<td>Pote 2131 Tpa Rosê 1.2L</td>	                            <td> R$ 6,30 </td></tr>
+                   <tr><td>3303</td>	<td>Pote 2133 Tpa Rosê 3.0L</td>	                            <td> R$ 8,62 </td></tr>
+                   <tr><td>3203</td>	<td>Pote 2132 Tpa Rosê 2.1L</td>	                            <td> R$ 7,23 </td></tr>
+                   <tr><td>2005</td>	<td>Baleiro Tpa Dourado 2.4L</td>	                            <td> R$ 7,02 </td></tr>
+                   <tr><td>2012</td>	<td>Baleiro Tpa Dourado 1.0L</td>	                            <td> R$ 5,30 </td></tr>
+                   <tr><td>3101</td>	<td>Pote 2131 Tpa Dourado 1.2L</td>	                            <td> R$ 6,30 </td></tr>
+                   <tr><td>3301</td>	<td>Pote 2133 Tpa Dourado 3.0L </td>	                        <td> R$ 8,62 </td></tr>
+                   <tr><td>3201</td>	<td>Pote 2132 Tpa Dourado 2.1L</td>	                            <td> R$ 7,23 </td></tr>
+                   <tr><td>4910</td>	<td>Pote Quadrado Matte Prata 1.5L</td>	                        <td> R$ 6,30 </td></tr>
+                   <tr><td>4810</td>	<td>Pote Quadrado Matte Prata 1.0L</td>	                        <td> R$ 5,03 </td></tr>
+                   <tr><td>4911</td>	<td>Pote Quadrado Matte Rose 1.5L</td>	                        <td> R$ 6,30 </td></tr>
+                   <tr><td>4811</td>	<td>Pote Quadrado Matte Rose 1.0L</td>	                        <td> R$ 5,03 </td></tr>
+                   <tr><td>2700</td>	<td>Pote Wave Matte Prata 1.5L</td>	                            <td> R$ 5,31 </td></tr>
+                   <tr><td>2600</td>	<td>Pote Wave Matte Prata 1.0L</td>	                            <td> R$ 5,01 </td></tr>
+                   <tr><td>2701</td>	<td>Pote Wave Matte Rose 1.5L</td>	                            <td> R$ 5,31 </td></tr>
+                   <tr><td>2601</td>	<td>Pote Wave Matte Rose 1.0L</td>	                            <td> R$ 5,01 </td></tr>
+                   <tr><td>7010</td>	<td>Pote Torneira sem base Limão Siciliano 3.6L</td>	        <td> R$ 9,21 </td></tr>
+                   <tr><td>7011</td>	<td>Pote Torneira sem base Laranja 3.6L</td>	                <td> R$ 9,21 </td></tr>
+                   <tr><td>8444</td>	<td>Pote Torneira Lousa Branco COM Base  3.6L </td>	            <td> R$ 13,78 </td></tr>
+                   <tr><td>8403</td>	<td>Pote Torneira Lousa Branco SEM Base 3.6L </td>	            <td> R$ 9,21 </td></tr>
+                   <tr><td>8344</td>	<td>Pote Torneira Lousa PRETO COM Base  3.6L </td>	            <td> R$ 13,78 </td></tr>
+                   <tr><td>8104</td>	<td>Pote Torneira Lousa PRETO SEM Base 3.6L </td>	            <td> R$ 9,21 </td></tr>
+                   <tr><td>1614</td>	<td>Copo New London 400ML - Mix Dog</td>	                    <td> R$ 3,91 </td></tr>
+                   <tr><td>1615</td>	<td>Copo New London 400ML - Mix Cat</td>	                    <td> R$ 3,91 </td></tr>
+                   <tr><td>1616</td>	<td>Copo New London 400ML - CORAÇÕES</td>	                    <td> R$ 3,91 </td></tr>
+                   <tr><td>1617</td>	<td>Copo New London 400ML - UNICORNIO</td>	                    <td> R$ 3,91 </td></tr>
+                   <tr><td>1618</td>	<td>Copo New London 400ML - URSINHO TEDDY</td>	                <td> R$ 3,91 </td></tr>
+                   <tr><td>1619</td>	<td>Copo New London 400ML - FESTAS</td>	                        <td> R$ 3,91 </td></tr>
+                   <tr><td>1620</td>	<td>Copo New London 400ML - LOVE</td>	                        <td> R$ 3,91 </td></tr>
+                   <tr><td>1621</td>	<td>Copo New London 400ML - TRANSP.</td>	                    <td> R$ 2,96 </td></tr>
+                   <tr><td>1710</td>	<td>Copo Caribe 400ML Vermelho</td>	                            <td> R$ 1,74 </td></tr>
+                   <tr><td>1711</td>	<td>Copo Caribe 400ML Rosa</td>	                                <td> R$ 1,74 </td></tr>
+                   <tr><td>1712</td>	<td>Copo Caribe 400ML Verde</td>	                            <td> R$ 1,74 </td></tr>
+                   <tr><td>1713</td>	<td>Copo Caribe 400ML Transp.</td>	                            <td> R$ 1,74 </td></tr>
+                   <tr><td>1714</td>	<td>Kit Copo Caribe 400 ML</td>	                                <td> R$ 1,74 </td></tr>
+                   <tr><td>1213</td>	<td>Jarra Summer com Tampa 1.4L (Laranja)</td>	                <td> R$ 7,32 </td></tr>
+                   <tr><td>1214</td>	<td>Jarra Summer com Tampa 1.4L (Limão Siciliano)</td>	        <td> R$ 7,32 </td></tr>
+                   <tr><td>1235</td>	<td>Jarra Summer Azulejo Português 1.4L</td>	                <td> R$ 7,32 </td></tr>
+                   <tr><td>1215</td>	<td>Jarra Summer com Tampa 1.4L (Melancia)</td>	                <td> R$ 7,32 </td></tr>
+                   <tr><td>1210</td>	<td>Jarra Summer com Tampa 1.4L (Abacaxi)</td>	                <td> R$ 7,32 </td></tr>
+                   <tr><td>1216</td>	<td>Jarra Summer com Tampa 1.4L (Morango)</td>	                <td> R$ 7,32 </td></tr>
+                   <tr><td>1218</td>	<td>Jarra Summer com Tampa 1.4L (Summer)</td>	                <td> R$ 7,32 </td></tr>
+                   <tr><td>1211</td>	<td>Jarra Summer com Tampa 1.4L (Azul.Hidraulico)</td>	        <td> R$ 7,32 </td></tr>
+                   <tr><td>1236</td>	<td>Jarra Summer Coração Rosa 1.4L</td>	                        <td> R$ 7,32 </td></tr>
+                   <tr><td>2107</td>	<td>Jarra Pratix 1.7L</td>	                                    <td> R$ 5,24 </td></tr>
+                   <tr><td>4007</td>	<td>Jarra Pratix 1.7L Verde Translúcida</td>	                <td> R$ 6,78 </td></tr>
+                   <tr><td>4107</td>	<td>Jarra Pratix 1.7L Laranja Translúcida</td>	                <td> R$ 6,78 </td></tr>
+                   <tr><td>3774</td>	<td>Jarra Laranja 2.650L</td>	                                <td> R$ 7,24 </td></tr>
+                   <tr><td>3773</td>	<td>Jarra Laranja com 4 Copos 2.650L</td>	                    <td> R$ 10,01 </td></tr>
+                   <tr><td>3674</td>	<td>Jarra Limão 2.650L</td>	                                    <td> R$ 7,24 </td></tr>
+                   <tr><td>3673</td>	<td>Jarra Limão com 4 Copos 2.650L</td>	                        <td> R$ 10,01 </td></tr>
+                   <tr><td>1533</td>	<td>Squeeze Dog Color 750ml</td>	                            <td> R$ 6,08 </td></tr>
+                   <tr><td>5603</td>	<td>Squeeze Dog Love 750ML</td>	                                <td> R$ 6,08 </td></tr>
+                   <tr><td>6103</td>	<td>Squeeze Mix Dog 750ML</td>	                                <td> R$ 6,08 </td></tr>
+                   <tr><td>1506</td>	<td>Squeeze Dog Corgi 750ML</td>	                            <td> R$ 6,08 </td></tr>
+                   <tr><td>1538</td>	<td>Squeeze Borboleta 750ml </td>	                            <td> R$ 6,08 </td></tr>
+                   <tr><td>5803</td>	<td>Squeeze Baby Cat 750ML</td>	                                <td> R$ 6,08 </td></tr>
+                   <tr><td>2303</td>	<td>Squeeze Mix Cat 750ML</td>	                                <td> R$ 6,08 </td></tr>
+                   <tr><td>1541</td>	<td>Squeeze Donuts  750ML</td>	                                <td> R$ 6,08 </td></tr>
+                   <tr><td>1514</td>	<td>Squeeze Surf 750ML</td>	                                    <td> R$ 6,08 </td></tr>
+                   <tr><td>1515</td>	<td>Squeeze Skate 750ML</td>	                                <td> R$ 6,08 </td></tr>
+                   <tr><td>1516</td>	<td>Squeeze Bike RUN 750ML</td>	                                <td> R$ 6,08 </td></tr>
+                   <tr><td>1517</td>	<td>Squeeze Bike COLORS 750ML</td>	                            <td> R$ 6,08 </td></tr>
+                   <tr><td>1454</td>	<td>Squeeze Morango 750 ML </td>	                            <td> R$ 6,08 </td></tr>
+                   <tr><td>7103</td>	<td>Squeeze Carros 750ml</td>	                                <td> R$ 6,08 </td></tr>
+                   <tr><td>3603</td>	<td>Squeeze Caveira Mexicana 750ML</td>                 	    <td> R$ 6,08 </td></tr>
+                   <tr><td>4903</td>	<td>Squeeze Unicornio 750ML</td>	                            <td> R$ 6,08 </td></tr>
+                   <tr><td>1536</td>	<td>Squeeze Gamer 750ml</td>	                                <td> R$ 6,08 </td></tr>
+                   <tr><td>1535</td>	<td>Squeeze Fox 750ml</td>	                                    <td> R$ 6,08 </td></tr>
+                   <tr><td>1519</td>	<td>Sport Coração</td>	                                        <td> R$ 6,08 </td></tr>
+                   <tr><td>2403</td>	<td>Squeeze Botanika 750ML</td>	                                <td> R$ 6,08 </td></tr>
+                   <tr><td>1542</td>	<td>Sport Love</td>	                                            <td> R$ 6,08 </td></tr>
+                   <tr><td>1518</td>	<td>Sport Malhação</td>	                                        <td> R$ 6,08 </td></tr>
+                   <tr><td>8503</td>	<td>Squeeze AMAZONIA 750ML</td>	                                <td> R$ 6,08 </td></tr>
+                   <tr><td>1513</td>	<td>Sport Camuflado</td>	                                    <td> R$ 6,08 </td></tr>
+                   <tr><td>1423</td>	<td>Squeeze Rosa 750ML</td>	                                    <td> R$ 6,08 </td></tr>
+                   <tr><td>1525</td>	<td>Squeeze Azul Marinho 750ML</td>	                            <td> R$ 6,08 </td></tr>
+                   <tr><td>1451</td>	<td>Squeeze Verde Água 750ml </td>	                            <td> R$ 6,08 </td></tr>
+                   <tr><td>1453</td>	<td>Squeeze Azul Translucida 750 ml </td>	                    <td> R$ 5,53 </td></tr>
+                   <tr><td>1415</td>	<td>Squeeze Rosa Translucida 750ML</td>	                        <td> R$ 5,53 </td></tr>
+                   <tr><td>1405</td>	<td>Squeeze Verde Água Translucida 750ML</td>	                <td> R$ 5,53 </td></tr>
+                   <tr><td>1419</td>	<td>Squeeze Transparente 750 ml</td>	                        <td> R$ 5,53 </td></tr>
+                   <tr><td>4150</td>	<td>Squeeze Mini Sport 350ml (Panda)</td>	                    <td> R$ 4,08 </td></tr>
+                   <tr><td>4151</td>	<td>Squeeze Mini Sport 350ml (Abelha)</td>	                    <td> R$ 4,08 </td></tr>
+                   <tr><td>4155</td>	<td>Squeeze Mini Sport 350ml (Urso)</td>	                    <td> R$ 4,08 </td></tr>
+                   <tr><td>4154</td>	<td>Squeeze Mini Sport 350ml (Fox)</td>	                        <td> R$ 4,08 </td></tr>
+                   <tr><td>4153</td>	<td>Squeeze Mini Sport 350ml (Coelho)</td>	                    <td> R$ 4,08 </td></tr>
+                   <tr><td>4152</td>	<td>Squeeze Mini Sport 350ml (Carros)</td>	                    <td> R$ 4,08 </td></tr>
+                   <tr><td>1524</td>	<td>Squeeze Easy Transp. 450ML (TP Inox fitilho Preto)</td>	    <td> R$ 7,32 </td></tr>
+                   <tr><td>1523</td>	<td>Squeeze Easy Transp. 450ML (TP Inox fitilho Pink)</td>	    <td> R$ 7,32 </td></tr>
+                   <tr><td>1522</td>	<td>Squeeze Easy Transp. 450ML (TP Inox fitilho Azul)</td>	    <td> R$ 7,32 </td></tr>
+                   <tr><td>1875</td>	<td>Hydra Azul  1.0L</td>	                                    <td> R$ 4,24 </td></tr>
+                   <tr><td>2375</td>	<td>Hydra Rosa 1.0L</td>	                                    <td> R$ 4,24 </td></tr>
+                   <tr><td>1675</td>	<td>Hydra Verde Água 1.0L</td>                              	<td> R$ 4,24 </td></tr>
+                   <tr><td>1375</td>	<td>Hydra Transparente 1.0L</td>                            	<td> R$ 4,24 </td></tr>
+                   <tr><td>1552</td>	<td>Bebedouro Nero Marquina 2.0L</td>                       	<td> R$ 20,75 </td></tr>
+                   <tr><td>1555</td>	<td>H2O Azul 1800ML com Fitilho</td>                         	<td> R$ 11,55 </td></tr>
+                   <tr><td>1556</td>	<td>H2O Fumê 1800ML com Fitilho</td>	                        <td> R$ 11,55 </td></tr>
+                   <tr><td>1557</td>	<td>H2O Rosa 1800ML com Fitilho</td>	                        <td> R$ 11,55 </td></tr>
+                   <tr><td>6198</td>	<td>Pote Mix Dog 1,5L</td>	                                    <td> R$ 6,54 </td></tr>
+                   <tr><td>6130</td>	<td>Pote Mix Dog 2.0L</td>	                                    <td> R$ 8,88 </td></tr>
+                   <tr><td>6101</td>	<td>Pote Mix Dog 1.0L</td>	                                    <td> R$ 5,13 </td></tr>
+                   <tr><td>5604</td>	<td>Pote Dog Love 3.6L</td>	                                    <td> R$ 7,13 </td></tr>
+                   <tr><td>5602</td>	<td>Pote Dog Love 1.7L</td>	                                    <td> R$ 5,07 </td></tr>
+                   <tr><td>0401</td>	<td>Dog Rosa 3.6L</td>	                                        <td> R$ 7,13 </td></tr>
+                   <tr><td>0201</td>	<td>Dog Rosa 1.7L</td>	                                        <td> R$ 5,07 </td></tr>
+                   <tr><td>0400</td>	<td>Pote Dog Azul 3.6L</td>	                                    <td> R$ 7,13 </td></tr>
+                   <tr><td>0200</td>	<td>Pote Dog Azul 1.7L</td>	                                    <td> R$ 5,07 </td></tr>
+                   <tr><td>2398</td>	<td>Pote Mix Cat 1.5L</td>	                                    <td> R$ 6,54 </td></tr>
+                   <tr><td>2330</td>	<td>Pote Mix Cat 2.0L</td>	                                    <td> R$ 8,88 </td></tr>
+                   <tr><td>2301</td>	<td>Pote Mix Cat 1.0L </td>	                                    <td> R$ 5,13 </td></tr>
+                   <tr><td>5804</td>	<td>Pote Baby Cat 3.6L</td>	                                    <td> R$ 7,13 </td></tr>
+                   <tr><td>5802</td>	<td>Pote Baby Cat 1.7L</td>	                                    <td> R$ 5,07 </td></tr>
+                   <tr><td>8570</td>	<td>Pote Borboleta 2.7L</td>	                                <td> R$ 6,13 </td></tr>
+                   <tr><td>8502</td>	<td>Pote Borboleta 1.7L</td>	                                <td> R$ 5,07 </td></tr>
+                   <tr><td>8566</td>	<td>Pote Borboleta 1.0L</td>	                                <td> R$ 3,83 </td></tr>
+                   <tr><td>7670</td>	<td>Pote Joaninha 2.7L</td>	                                    <td> R$ 6,13 </td></tr>
+                   <tr><td>7604</td>	<td>Pote Joaninha 3.6L</td>	                                    <td> R$ 7,13 </td></tr>
+                   <tr><td>7602</td>	<td>Pote Joaninha 1.7L</td>	                                    <td> R$ 5,07 </td></tr>
+                   <tr><td>2470</td>	<td>Pote Torneira Base Botanika 2.7L</td>	                    <td> R$ 13,78 </td></tr>
+                   <tr><td>2370</td>	<td>Pote Botanika 2.7L</td>	                                    <td> R$ 6,13 </td></tr>
+                   <tr><td>2602</td>	<td>Pote Botanika 1.7L</td>	                                    <td> R$ 5,07 </td></tr>
+                   <tr><td>8530</td>	<td>Pote Amazonia 2.0L</td>	                                    <td> R$ 8,88 </td></tr>
+                   <tr><td>8598</td>	<td>Pote Amazonia 1.5L</td>	                                    <td> R$ 6,54 </td></tr>
+                   <tr><td>7171</td>	<td>Pote Carros Torneira c/base 2.7L</td>	                    <td> R$ 13,78 </td></tr>
+                   <tr><td>7170</td>	<td>Pote Carros Torneira s/base 2.7L</td>	                    <td> R$ 9,20 </td></tr>
+                   <tr><td>7102</td>	<td>Pote Carros 1.7L</td>	                                    <td> R$ 5,07 </td></tr>
+                   <tr><td>4970</td>	<td>Pote Torneceira Base Unicornio 2.7L</td>                	<td> R$ 13,78 </td></tr>
+                   <tr><td>4998</td>	<td>Pote Unicornio 1.5L</td>	                                <td> R$ 6,54 </td></tr>
+                   <tr><td>4901</td>	<td>Pote Unicornio 1.0L</td>	                                <td> R$ 5,13 </td></tr>
+                   <tr><td>2570</td>	<td>Pote Morango 2.7L </td>	                                    <td> R$ 6,13 </td></tr>
+                   <tr><td>2544</td>	<td>Pote Morango 3.6L </td>	                                    <td> R$ 7,13 </td></tr>
+                   <tr><td>2502</td>	<td>Pote Morango 1.7L</td>	                                    <td> R$ 5,07 </td></tr>
+                   <tr><td>2503</td>	<td>Pote Torneira Morango com Base 3.6L </td>	                <td> R$ 13,78 </td></tr>
+                   <tr><td>2504</td>	<td>Pote Torneira Morango sem Base 3.6L </td>	                <td> R$ 9,21 </td></tr>
+                   <tr><td>2566</td>	<td>Pote Morango 1.0L</td>	                                    <td> R$ 3,83 </td></tr>
+                   <tr><td>5170</td>	<td>Pote Abacaxi 2.7L </td>	                                    <td> R$ 6,13 </td></tr>
+                   <tr><td>5104</td>	<td>Pote Abacaxi 3.6L </td>	                                    <td> R$ 7,13 </td></tr>
+                   <tr><td>5102</td>	<td>Pote Abacaxi 1.7L </td>	                                    <td> R$ 5,07 </td></tr>
+                   <tr><td>5166</td>	<td>Pote Abacaxi 1.0L</td>	                                    <td> R$ 3,83 </td></tr>
+                   <tr><td>5270</td>	<td>Pote Melancia 2.7L </td>	                                <td> R$ 6,13 </td></tr>
+                   <tr><td>5204</td>	<td>Pote Melancia 3.6L </td>	                                <td> R$ 7,13 </td></tr>
+                   <tr><td>5202</td>	<td>Pote Melancia 1.7L </td>	                                <td> R$ 5,07 </td></tr>
+                   <tr><td>5266</td>	<td>Pote Melancia 1.0L</td>	                                    <td> R$ 3,83 </td></tr>
+                   <tr><td>2101</td>	<td>Pote Reto Transp. 1.0L</td>                             	<td> R$ 3,56 </td></tr>
+                   <tr><td>2130</td>	<td>Pote Reto Transp. 2.0L</td>	                                <td> R$ 5,47 </td></tr>
+                   <tr><td>2198</td>	<td>Pote Reto Transp. 1.5L</td>                              	<td> R$ 4,27 </td></tr>
+                   <tr><td>2104</td>	<td>Pote Pet Transp.  3.6L</td>	                                <td> R$ 5,50 </td></tr>
+                   <tr><td>2170</td>	<td>Pote Transp. 2.7L</td>	                                    <td> R$ 4,90 </td></tr>
+                   <tr><td>2102</td>	<td>Pote Transp. 1.7L</td>	                                    <td> R$ 3,82 </td></tr>
+                   <tr><td>2166</td>	<td>Petit Pote Transp.  1.0L</td>	                            <td> R$ 3,39 </td></tr>
+                   <tr><td>2120</td>	<td>Pote Bal.Transp.  2.4L</td>	                                <td> R$ 4,66 </td></tr>
+                   <tr><td>2001</td>	<td>Baleiro Transp. 1.0L</td>	                                <td> R$ 2,90 </td></tr>
+                   <tr><td>2249</td>	<td>Baleiro Transp 500ML</td>	                                <td> R$ 2,24 </td></tr>
+                   <tr><td>3806</td>	<td>Mini Pots Branco  150 ml</td>	                            <td> R$ 1,83 </td></tr>
+                   <tr><td>1234</td>	<td>Jarra Summer Branco LISA</td>                           	<td> R$ 6,78 </td></tr>
+                   <tr><td>2135</td>	<td>Pote Macarrão 2.0L  </td>	                                <td> R$ 5,16 </td></tr>
+                   <tr><td>2703</td>	<td>Pote Wave 1.500ml</td>	                                    <td> R$ 4,83 </td></tr>
+                   <tr><td>2603</td>	<td>Pote Wave 1.000ml</td>	                                    <td> R$ 4,55 </td></tr>
+                   <tr><td>3823</td>	<td>Mini Pots Amarelo 150 ml</td>	                            <td> R$ 1,83 </td></tr>
+                   <tr><td>3825</td>	<td>Mini Pots verde 150 ml</td>	                                <td> R$ 1,83 </td></tr>
+                   <tr><td>3824</td>	<td>Mini Pots Rosa 150 ml</td>	                                <td> R$ 1,83 </td></tr>
+                   <tr><td>3801</td>	<td>Mini Pots 150ml Mix cores</td>	                            <td> R$ 1,83 </td></tr>
+                   <tr><td>2761</td>	<td>Pote Tempero Flip Top Tpa Preta 285ml </td>	                <td> R$ 2,75 </td></tr>
+                   <tr><td>2861</td>	<td>Pote Tempero Flip Top Tpa Branca 285ml </td>	            <td> R$ 2,75 </td></tr>
+                   <tr><td>2961</td>	<td>Pote Tempero Flip Top Tpa Vermelha 285ml</td>	            <td> R$ 2,75 </td></tr>
+                   <tr><td>9801</td>	<td>Pote Leaves 1.7L  Pimp </td>	                            <td> R$ 5,69 </td></tr>
+                   <tr><td>1558</td>	<td>Squeeze Leaves 750ml</td>	                                <td> R$ 6,70 </td></tr>
+                   <tr><td>3415</td>	<td>Squeeze Tucano 750ml </td>                              	<td> R$ 6,70 </td></tr>
+                   <tr><td>3414</td>	<td>Pote Tucano 1.450ml  </td>                              	<td> R$ 5,00 </td></tr>
+                </tbody>
+
+            </table>       
+        </div>    
+    </body> 
+</html>
